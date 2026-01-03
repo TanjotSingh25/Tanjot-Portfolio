@@ -1,0 +1,157 @@
+.resume-page {
+  max-width: 100%;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #ffa500;
+  border-radius: 2px;
+}
+
+.resume-section {
+  margin-bottom: 4rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-icon {
+  width: 24px;
+  height: 24px;
+  color: #ffa500;
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #2a2a2a;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 5px;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  border: 3px solid var(--eerie-black-2);
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.timeline-content {
+  padding: 0;
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-company,
+.timeline-institution {
+  font-size: 1rem;
+  color: #ffa500;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.timeline-period {
+  font-size: 0.9rem;
+  color: #888888;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-location {
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-description {
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.timeline-responsibilities {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.timeline-responsibilities li {
+  color: #cccccc;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-responsibilities li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #ffa500;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-dot {
+    left: -1.25rem;
+  }
+}
+

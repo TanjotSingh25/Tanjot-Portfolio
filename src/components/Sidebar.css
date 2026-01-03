@@ -1,0 +1,147 @@
+.sidebar {
+  position: sticky;
+  top: 2rem;
+  width: 300px;
+  background-color: var(--eerie-black-2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid var(--jet);
+  height: fit-content;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+}
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 3px solid #ffa500;
+}
+
+.online-indicator {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #4ade80;
+  border: 3px solid #1a1a1a;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.title-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: #2a2a2a;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+.contact-section {
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  color: #ffa500;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contact-label {
+  font-size: 0.75rem;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-value {
+  font-size: 0.9rem;
+  color: #ffffff;
+  word-break: break-word;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background-color: #ffa500;
+  transform: translateY(-2px);
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: none;
+  }
+}
+
