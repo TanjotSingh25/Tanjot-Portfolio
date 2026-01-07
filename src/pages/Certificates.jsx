@@ -25,37 +25,6 @@ function Certificates() {
     },
   ];
 
-  const extracurriculars = [];
-  //   {
-  //     title: "Open Source Contributor",
-  //     organization: "GitHub",
-  //     period: "2021 – Present",
-  //     description:
-  //       "Contributed to various open-source projects, including React libraries and developer tools.",
-  //   },
-  //   {
-  //     title: "Tech Blog Writer",
-  //     organization: "Personal Blog",
-  //     period: "2020 – Present",
-  //     description:
-  //       "Writing technical articles about web development, best practices, and tutorials.",
-  //   },
-  //   {
-  //     title: "Hackathon Winner",
-  //     organization: "Local Tech Community",
-  //     period: "2022",
-  //     description:
-  //       "Won first place in a 48-hour hackathon with a innovative mobile application.",
-  //   },
-  //   {
-  //     title: "Mentor",
-  //     organization: "Coding Bootcamp",
-  //     period: "2023 – Present",
-  //     description:
-  //       "Mentoring aspiring developers and helping them build their first projects.",
-  //   },
-  // ];
-
   return (
     <div className="certificates-page">
       <h2 className="page-title">Certificates & Extracurriculars</h2>
@@ -84,42 +53,6 @@ function Certificates() {
               <p className="certificate-issuer">{cert.issuer}</p>
               <p className="certificate-date">{cert.date}</p>
               <p className="certificate-description">{cert.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="extracurriculars-section">
-        <div className="section-header">
-          <svg
-            className="section-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-            />
-          </svg>
-          <h3 className="section-title">Extracurriculars</h3>
-        </div>
-        <div className="extracurriculars-list">
-          {extracurriculars.map((item, index) => (
-            <div key={index} className="extracurricular-item">
-              <div className="extracurricular-dot"></div>
-              <div className="extracurricular-content">
-                <h4 className="extracurricular-title">{item.title}</h4>
-                <p className="extracurricular-organization">
-                  {item.organization}
-                </p>
-                <p className="extracurricular-period">{item.period}</p>
-                <p className="extracurricular-description">
-                  {item.description}
-                </p>
-              </div>
             </div>
           ))}
         </div>
