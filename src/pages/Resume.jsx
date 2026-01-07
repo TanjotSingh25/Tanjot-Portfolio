@@ -138,6 +138,8 @@ function Resume() {
         <a 
           href="/Tanjot_Singh_Resume.pdf" 
           download="Tanjot_Singh_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="download-resume-btn"
         >
           <svg className="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">

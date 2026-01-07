@@ -67,6 +67,11 @@
   gap: 1.5rem;
 }
 
+.portfolio-page .project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .portfolio-page .project-card {
   background-color: #2a2a2a;
   border-radius: 15px;

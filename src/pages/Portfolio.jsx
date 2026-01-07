@@ -64,8 +64,14 @@ function Portfolio() {
 
       <div className="projects-grid">
         {projects.map((project) => (
-          <a href={project.link}>
-            <div key={project.id} className="project-card">
+          <a 
+            key={project.id}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <div className="project-card">
               <div className="project-icon">{project.icon}</div>
               <h3 className="project-title">{project.title}</h3>
             </div>
