@@ -1,30 +1,29 @@
-import './Navigation.css'
+import "./Navigation.css";
 
 function Navigation({ activePage, setActivePage }) {
   const navItems = [
-    { id: 'about', label: 'About' },
-    { id: 'resume', label: 'Resume' },
-    { id: 'portfolio', label: 'Portfolio' },
-    { id: 'certificates', label: 'Certificates' }
-  ]
+    { id: "about", label: "About" },
+    { id: "resume", label: "Resume" },
+    { id: "portfolio", label: "Projects" },
+    { id: "certificates", label: "Certificates" },
+  ];
 
   return (
     <nav className="navigation">
-      {navItems.map(item => (
+      {navItems.map((item) => (
         <button
           key={item.id}
           type="button"
-          className={`nav-link ${activePage === item.id ? 'active' : ''}`}
+          className={`nav-link ${activePage === item.id ? "active" : ""}`}
           onClick={() => {
-            setActivePage(item.id)
+            setActivePage(item.id);
           }}
         >
           {item.label}
         </button>
       ))}
     </nav>
-  )
+  );
 }
 
-export default Navigation
-
+export default Navigation;

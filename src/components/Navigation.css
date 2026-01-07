@@ -7,8 +7,10 @@
   padding: 1.1rem 2rem;
   background: #2b2b2cbf;
   backdrop-filter: blur(10px);
-  border: 1px solid var(--jet);
+  border: 1px solid #444444;
   border-radius: 0 20px 0 20px;
+  border-top-style: none;
+  border-right-style: none;
   z-index: 10;
 }
 
@@ -41,9 +43,8 @@
     flex-wrap: wrap;
     gap: 1rem;
   }
-  
+
   .nav-link {
     font-size: 0.9rem;
   }
 }
-

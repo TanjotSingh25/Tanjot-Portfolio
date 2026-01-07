@@ -11,7 +11,8 @@
   color: #ffffff;
   font-family: var(--ff-poppins);
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: 2rem;
+  padding-top: 4rem;
 }
 
 .content-wrapper {
@@ -30,7 +31,7 @@
   max-width: 980px;
   background-color: var(--eerie-black-2);
   border-radius: 20px;
-  border: 1px solid var(--jet);
+  border: 1px solid #444444;
   padding: 2rem 3rem;
   min-width: 0;
 }
@@ -40,7 +41,7 @@
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .main-content {
     padding: 1.5rem;
   }

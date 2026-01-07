@@ -11,7 +11,7 @@
   padding-bottom: 0.5rem;
 }
 
-.page-title::after {
+.about-page .page-title::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -22,11 +22,11 @@
   border-radius: 2px;
 }
 
-.section {
+.about-page .section {
   margin-bottom: 2rem;
 }
 
-.section-title {
+.about-page .section-title {
   font-size: 2rem;
   font-weight: 500;
   color: #ffffff;
@@ -35,7 +35,7 @@
   padding-bottom: 0.5rem;
 }
 
-.section-title::after {
+.about-page .section-title::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -46,17 +46,17 @@
   border-radius: 2px;
 }
 
-.section-content {
+.about-page .section-content {
   color: #cccccc;
   line-height: 1.8;
   font-size: 0.9rem;
 }
 
-.section-content p {
+.about-page .section-content p {
   margin-bottom: 1rem;
 }
 
-.services-grid {
+.about-page .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -64,7 +64,7 @@
   margin-top: 2rem;
 }
 
-.service-card {
+.about-page .service-card {
   background-color: #2a2a2a;
   border-radius: 15px;
   padding: 1.5rem;
@@ -75,12 +75,12 @@
   gap: 1.5rem;
 }
 
-.service-card:hover {
+.about-page .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0px 20px rgba(255, 165, 0, 0.5);
 }
 
-.service-icon {
+.about-page .service-icon {
   flex-shrink: 0;
   width: 60px;
   height: 100%;
@@ -89,53 +89,53 @@
   justify-content: center;
 }
 
-.service-icon img {
+.about-page .service-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.service-content {
+.about-page .service-content {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.service-title {
+.about-page .service-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
-.service-description {
+.about-page .service-description {
   color: #aaaaaa;
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
-.skills-container {
+.about-page .skills-container {
   margin-top: 2rem;
 }
 
-.skill-category {
+.about-page .skill-category {
   margin-bottom: 2rem;
 }
 
-.skill-category-title {
+.about-page .skill-category-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 1rem;
 }
 
-.skills-list {
+.about-page .skills-list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-.skill-badge {
+.about-page .skill-badge {
   display: inline-block;
   padding: 0.5rem 1rem;
   background-color: #2a2a2a;
@@ -146,19 +146,19 @@
   transition: all 0.3s ease;
 }
 
-.skill-badge:hover {
+.about-page .skill-badge:hover {
   background-color: #ffa500;
   transform: translateY(-2px);
 }
 
 
 @media (max-width: 768px) {
-  .services-grid {
+  .about-page .services-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
   
-  .service-card {
+  .about-page .service-card {
     aspect-ratio: auto;
   }
 }
